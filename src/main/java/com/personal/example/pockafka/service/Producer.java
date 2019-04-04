@@ -20,6 +20,6 @@ public class Producer {
     @Scheduled(fixedDelay = 2000)
     public void sendMessage(){
         log.info("Sending message...");
-        kafkaTemplate.send(TOPIC, "Message from app publisher");
+        kafkaTemplate.send(TOPIC, "Prueba manually");
     }
 }
